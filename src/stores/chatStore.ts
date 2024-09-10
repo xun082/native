@@ -1,4 +1,4 @@
-import {create} from 'zustand';
+import { create } from 'zustand';
 
 export type chatRoom = {
   id: string;
@@ -13,7 +13,7 @@ interface ChatState {
   setSelectedChatRoom: (chatRoom: chatRoom) => void;
 }
 
-export const useChatStore = create<ChatState>(set => ({
+export const useChatStore = create<ChatState>((set) => ({
   selectedChatRoom: null,
-  setSelectedChatRoom: chatRoom => set({selectedChatRoom: chatRoom}),
+  setSelectedChatRoom: (chatRoom) => set({ selectedChatRoom: chatRoom }),
 }));

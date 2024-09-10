@@ -1,9 +1,8 @@
-// Chat.tsx
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
-export default function Chat({route}: any) {
-  const {id} = route.params; // 从导航参数中获取 id
+export default function Chat({ route }: any) {
+  const { id } = route.params; // 从导航参数中获取 id
 
   return (
     <View style={styles.container}>
